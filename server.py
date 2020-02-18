@@ -27,10 +27,11 @@ def mat_pow(mat, e):
     if (e == 1):
         return mat
 
+    s_mat = mat_pow(mat, int(e / 2))
     if (e % 2):
-        return mat_pow(mat, int(e / 2)) * mat_pow(mat, int(e / 2)) * mat
+        return s_mat * s_mat * mat
 
-    return mat_pow(mat, int(e / 2)) * mat_pow(mat, int(e / 2))
+    return s_mat * s_mat
 
 def fibonacci(n):
     if (n == 0):
