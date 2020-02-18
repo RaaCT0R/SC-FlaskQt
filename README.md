@@ -1,6 +1,6 @@
 # Fibonacci Client-Server
 
-A simple client-server application using Flask (python) as server and Qt as client.
+A simple client-server application using Flask (python) as server and Qt as client. Also it calculate the elements using dynamic programming.
 
 **Client**
 - Implemented with Qt (*C++*)
